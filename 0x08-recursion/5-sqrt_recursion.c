@@ -38,20 +38,16 @@ int _sqrt_recursion(int n)
  */
 int sqrt_helper(int n, int start, int end)
 {
-	int mid, result;
+	int mid = (start + end) / 2;
 
-	if (start <= end)
-	{
-		mid = (start + end) / 2;
-		result = mid * mid;
+	if (start > end)
+		return (-1);
 
-		if (result == n)
-			return (mid);
-		else if (result > n)
-			return (sqrt_helper(n, start, mid - 1));
-		else
-			return (sqrt_helper(n, mid + 1, end));
-	}
+	if (mid * mid == n)
+		return (mid);
 
-	return (-1);
+	if (mid * mid > n)
+		return (sqrt_helper(n, start, mid - 1));
+
+	return (sqrt_helper(n, mid + 1, end));
 }
