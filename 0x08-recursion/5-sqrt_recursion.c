@@ -28,7 +28,7 @@ int calculateSquareRoot(int n, int k)
 	if (k * k > n)
 		return (-1);
 	if (k * k == n)
-		return (i);
+		return (k);
 	return (calculateSquareRoot(n, k + 1));
 }
 
