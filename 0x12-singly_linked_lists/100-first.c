@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void first(void)_attribute_((constructor));
+void first(void) __attribute__((constructor));
 
 /**
  * first - Displays a message before the main
