@@ -1,5 +1,5 @@
 #include "main.h"
-		
+
 /**
  * _strcpy - a function that copies the string pointed to by src to a dest
  * @dest: pointer to the destination buffer
@@ -23,4 +23,3 @@ char *_strcpy(char *dest, char *src)
 	dest[l] = '\0';
 	return (dest);
 }
- 

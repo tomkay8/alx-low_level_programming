@@ -1,5 +1,5 @@
 #include "main.h"
-		
+
 /**
  * _isdigit - checks if a character represents a digit (0 through 9)
  * @c: character to be checked
