@@ -8,7 +8,7 @@
  * Return: the number of bits to flip.
  */
 
-unsigned int count_bits_to_flip(unsigned long int n, unsigned long int m)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	int bitPos, bitFlipCount = 0;
 	unsigned long int bitXOR = n ^ m;
@@ -18,5 +18,5 @@ unsigned int count_bits_to_flip(unsigned long int n, unsigned long int m)
 	if ((bitXOR >> bitPos) & 1)
 		bitFlipCount++;
 	}
-	return bitFlipCount;
+	return (bitFlipCount);
 }
